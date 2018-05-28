@@ -71,6 +71,30 @@ body{
     margin: 50px auto;
     padding: 30px;
 }
+/*标题*/
+.wrap h2{
+    overflow: hidden;
+    width: 700px;
+    height: 18px;
+    border-right: 1px solid #888;
+    -webkit-animation: width 3s steps(19), border 1.5s steps(1) infinite;
+    -o-animation: width 3s steps(19), border 1.5s steps(1) infinite;
+    animation: width 3s steps(19), border 1.5s steps(1) infinite;
+    color: #888;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 18px;
+    text-algin: center;
+    letter-spacing: 1px;
+    margin: 0 auto 30px;
+}
+@keyframes border {
+    50% {border-color: transparent;}
+}
+@keyframes width {
+    0% {width: 0;}
+}
+/*路面*/
 .road{
     position: relative;
     width: 987px;
