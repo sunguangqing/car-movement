@@ -84,9 +84,10 @@ body{
     white-space: nowrap;
     font-size: 18px;
     line-height: 18px;
-    text-algin: center;
+    text-align: center;
     letter-spacing: 1px;
     margin: 0 auto 30px;
+    padding: 0 5px;
 }
 @keyframes border {
     50% {border-color: transparent;}
