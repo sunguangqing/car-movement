@@ -148,6 +148,9 @@ body{
     color: #fff;
     border: 3px solid #02adee;
     line-height: 65px;
-    background: -webkit-radial-gradient(circle, #02adee 64%, #fff 68%);
+    background: -webkit-radial-gradient(circle, #02adee 64%, #fff 68%); 
+    background: -o-radial-gradien(circle, #02adee 64%, #fff 68%); 
+    background: -moz-radial-gradient(circle, #02adee 64%, #fff 68%); 
+    background: radial-gradient(circle, #02adee 64%, #fff 68%);
 }
 
