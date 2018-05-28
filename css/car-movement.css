@@ -74,12 +74,12 @@ body{
 /*标题*/
 .wrap h2{
     overflow: hidden;
-    width: 700px;
+    width: 350px;
     height: 18px;
     border-right: 1px solid #888;
-    -webkit-animation: width 3s steps(19), border 1.5s steps(1) infinite;
-    -o-animation: width 3s steps(19), border 1.5s steps(1) infinite;
-    animation: width 3s steps(19), border 1.5s steps(1) infinite;
+    -webkit-animation: width 3s steps(19) .3s, border 1.5s steps(1) infinite;
+    -o-animation: width 3s steps(19) .3s, border 1.5s steps(1) infinite;
+    animation: width 3s steps(19) .3s, border 1.5s steps(1) infinite;
     color: #888;
     white-space: nowrap;
     font-size: 18px;
