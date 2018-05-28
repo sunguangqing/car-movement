@@ -22,3 +22,40 @@ $(".btn-group span").mousemove(function () {
     $(".car-box").css("transform", 'translateX(' + translate + 'px)').find("img").css("transform", 'rotate(' + rotate + 'deg)');
 });
 ```
+
+### 动图显示标题
+
+#### `利用animation动画实现动态显示标题效果`
+```CSS
+h2{
+    overflow: hidden;
+    width: 380px;
+    height: 18px;
+    border-right: 1px solid #888;
+    -webkit-animation: width 4s steps(20), border 1s steps(1) infinite;
+    -o-animation: width 4s steps(20), border 1s steps(1) infinite;
+    animation: width 4s steps(20), border 1s steps(1) infinite;
+    color: #888;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 auto 30px;
+}
+@keyframes border {
+    50% {border-color: transparent;}
+}
+@keyframes width {
+    0% {width: 0;}
+}
+```
+
+>注意：浏览器兼容问题
+```CSS
+@-webkit-keyframes animation-name { }
+   @-moz-keyframes animation-name { }
+    @-ms-keyframes animation-name { }
+     @-o-keyframes animation-name { }
+        @keyframes animation-name { }
+```
