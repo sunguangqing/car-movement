@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 根据浏览器的屏幕大小自适应的展现合适的效果 -->
+    <meta name="applicable-device" content="pc,mobile"/>
+    <!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <!--自动选择更好的浏览器-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>小车移动</title>
+    <link href="css/car-movement.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="wrap">
+    <div class="road">
+        <div class="car-box">
+            <img class="tyre-front" src="images/car_luntai.png">
+            <img class="tyre-behind" src="images/car_luntai.png">
+        </div>
+    </div>
+    <div class="btn-group clearfix">
+        <div class="border"></div>
+        <span class="active">启动</span><span>加速</span><span>匀速</span><span>转弯</span><span>制动</span>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/car-movement.js"></script>
+</body>
+</html>
